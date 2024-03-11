@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.elem{
+    height: 130px;
+    width: 100%;
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.elem h1{
+    font-size: 12vh;
+    z-index: 9;
+    mix-blend-mode: difference;
+}
+
+.elem img{
+    height:120px;
+    width:120px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    transition: all linear 0.2s;
+       opacity: 0;
+}

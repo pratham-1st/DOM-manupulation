@@ -1,0 +1,52 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box 
+    }
+    
+    html, body{
+     height : 100%;
+     width : 100%
+    }
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    flex-direction: column;
+}
+#card{
+    height: 350px;
+    width: 250px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    position: relative;
+}
+
+#info{
+    margin: 10px 0;
+}
+
+#info h1{
+    font-size: 20px;
+    color: antiquewhite;
+}
+
+#card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#card i{
+    color:white;
+    position: absolute;
+    transform: translate(-50%,-50%) scale(0);
+    top: 50%;
+    left: 50%;
+    font-size: 70px;
+    opacity: 0;
+    transition: transform .2s ease-in-out;
+}
